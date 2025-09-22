@@ -21,8 +21,8 @@ const winningConditions = [
 ];
 
 document.getElementById('submit').addEventListener('click', () => {
-    player1Name = document.getElementById('player-1').value.trim();
-    player2Name = document.getElementById('player-2').value.trim();
+    player1Name = document.getElementById('player1').value.trim();
+    player2Name = document.getElementById('player2').value.trim();
 
     if (player1Name === '' || player2Name === '') {
         alert('Please enter names for both players.');
