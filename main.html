@@ -8,31 +8,31 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div>
-		<h1>Tic Tac Toe</h1>
-		<Label for="player-1">Player 1</Label>
-	<input type="text" id="player1" placeholder="enter name" required>
-		<br><br>
-		<Label for="player2">Player 2</Label>
-	<input type="text" id="player2" placeholder="enter name"required>
-	<br><br>
-	<button type="submit" id="submit" onclick="Game_Start()">Start Game</button>
-	</div>
-	<div>
-	<h1>Tic Tac Toe</h1>
-		<div class="message">Player1, you're up</div>
-	<div class="board" id="mains">
+	  <div class="container">
+        <div id="name-input">
+            <h1>Enter Player Names</h1>
+            <label for="player-1">Player 1 (X):</label>
+            <input type="text" id="player-1" placeholder="Enter Player 1 Name">
+            <label for="player-2">Player 2 (O):</label>
+            <input type="text" id="player-2" placeholder="Enter Player 2 Name">
+            <button id="submit">Start Game</button>
+        </div>
 
-		<div id=="1" class="borad_box">1</div>
-		<div id="2" class="borad_box">2</div>
-		<div id="3" class="borad_box">3</div>
-		<div id="4" class="borad_box">4</div>
-		<div id="5" class="borad_box">5</div>
-		<div id="6" class="borad_box">6</div>
-		<div id="7" class="borad_box">7</div>
-		<div id="8" class="borad_box">8</div>
-		<div id="9" class="borad_box">9</div>
-	</div>
+        <div id="game-board-container" style="display: none;">
+            <h1>Tic Tac Toe</h1>
+            <div class="message"></div>
+            <div id="board">
+                <div class="cell" id="1"></div>
+                <div class="cell" id="2"></div>
+                <div class="cell" id="3"></div>
+                <div class="cell" id="4"></div>
+                <div class="cell" id="5"></div>
+                <div class="cell" id="6"></div>
+                <div class="cell" id="7"></div>
+                <div class="cell" id="8"></div>
+                <div class="cell" id="9"></div>
+            </div>
+        </div>
     </div>
 		<script type="text/javascript" src="./script.js">
 </script>
