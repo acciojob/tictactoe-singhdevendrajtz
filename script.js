@@ -58,12 +58,12 @@ function handleCellClick(event) {
 }
 
 function switchPlayer() {
-    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+    currentPlayer = currentPlayer === 'x' ? 'o' : 'x';
 }
 
 function updateMessage() {
     if (gameActive) {
-        let name = currentPlayer === 'X' ? player1Name : player2Name;
+        let name = currentPlayer === 'x' ? player1Name : player2Name;
         messageDiv.innerHTML = `${name}, you're up!`;
     }
 }
@@ -86,7 +86,7 @@ function checkResult() {
     }
 
     if (roundWon) {
-        let winnerName = currentPlayer === 'X' ? player1Name : player2Name;
+        let winnerName = currentPlayer === 'x' ? player1Name : player2Name;
         messageDiv.innerHTML = `${winnerName} congratulations, you won!`;
         gameActive = false;
         disableCells();
