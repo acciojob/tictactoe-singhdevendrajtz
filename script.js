@@ -45,6 +45,7 @@ function handleCellClick(event) {
     if (board[clickedCellId] !== '' || !gameActive) {
         return;
     }
+	
 
     board[clickedCellId] = currentPlayer;
     clickedCell.innerHTML = currentPlayer;
